@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas 2 - Form Bebas</title>
+  <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body style="font-family: nunito; background: #eeeeee; padding: 1%;">
+  <h1 style="text-align: center;">Desain Web</h1>
+  <h4 style="color: red; text-align: center;" class="d-none">Akan lebih baik jika tersambung ke Internet :)</h4>
+  <hr>
+
+  <div class="container">
+    <div class="alert alert-info">
+      NPM : 4519210080 <br>
+      Nama : Purwa Sabrang Ramadhan <br>
+      Matkul / Kelas : Desain Web / B <br>
+      <a href="https://cdn.nyrat.id/temp/dw/tugas2/tugas2.html" target="_blank">Online Access</a>
+    </div>
+    <hr>
+
+    <div class="shadow-sm bg-white rounded">
+      <div class="card-body">
+        <div class="text-center">
+          <img src="up.png" class="img-fluid" alt="Logo Universitas Pancasila">
+        </div>
+        <hr>
+        <h4>Formulir pendaftaran Mahasiswa Baru TA 20/21</h4>
+        <!-- --- FORM BEGIN --- -->
+        <form action="https://cdn.nyrat.id/temp/dw/tugas2/kirim.php" method="post">
+          <fieldset class="p-3" style="border: 1px solid; font-family: arial;">
+            <div style="margin-bottom: 1rem;">
+              <label>Nama Lengkap</label>
+              <input type="text" name="nama" placeholder="Purwa Sabrang Ramadhan" class="form-control" required>
+            </div>
+
+            <div style="margin-bottom: 1rem;">
+              <label>Jenis Kelamin</label> <br>
+              <input type="radio" name="jk" value="Laki-Laki" id="lk" required>
+              <label for="lk">Laki - Laki</label>
+              &nbsp;
+              <input type="radio" name="jk" value="Perempuan" id="pr" required>
+              <label for="pr">Perempuan</label>
+            </div>
+
+            <div style="margin-bottom: 1rem;">
+              <label>Tanggal Lahir</label>
+              <input type="date" name="ttl" class="form-control" required>
+            </div>
+
+            <div style="margin-bottom: 1rem;">
+              <label>No Telp</label>
+              <input type="number" name="telp" placeholder="08123456789" class="form-control" required>
+            </div>
+
+            <div style="margin-bottom: 1rem;">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="purwa@email.com" class="form-control" required>
+            </div>
+
+            <div style="margin-bottom: 1rem;">
+              <label>Alamat</label>
+              <textarea name="alamat" placeholder="Perumahan Indah Bagus Asri. JL Duren Lama RT01/15. Srengseng Sawah, Jakarta Selatan." rows="5" class="form-control" required></textarea>
+            </div>
+
+            <div style="margin-bottom: 1rem;">
+              <label>Upload Foto: </label>
+              <input type="file" name="foto" placeholder="purwa@email.com" required>
+            </div>
+          </fieldset>
+          <br>
+          <fieldset class="p-3" style="border: 1px solid; font-family: arial;">
+
+            <div style="margin-bottom: 1rem;">
+              <label>Riwayat Pendidikan</label> <br>
+              <input type="checkbox" name="tk" value="1" id="tk">
+              <label for="tk">TK</label>
+              <br>
+              <input type="checkbox" name="sd" value="1" id="sd">
+              <label for="sd">SD</label>
+              <br>
+              <input type="checkbox" name="smp" value="1" id="smp">
+              <label for="smp">SMP</label>
+              <br>
+              <input type="checkbox" name="sma" value="1" id="sma">
+              <label for="sma">SMA</label>
+              <br>
+              <input type="checkbox" name="smk" value="1" id="smk">
+              <label for="smk">SMK</label>
+              <br>
+            </div>
+
+            <div style="margin-bottom: 1rem;">
+              <label>Pilih Jurusan</label>
+              <select name="jurusan" class="form-control" required>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Teknik Industri">Teknik Industri</option>
+                <option value="Teknik Mesin">Teknik Mesin</option>
+                <option value="Teknik Arsitektur">Teknik Arsitektur</option>
+              </select>
+            </div>
+
+            <div style="margin-bottom: 1rem;">
+              <label>Pilih Jenjang</label>
+              <input list="jenjang" name="jenjang" placeholder="D3/S1/S2" class="form-control" required>
+              <datalist id="jenjang">
+                <option value="D3">
+                <option value="S1">
+                <option value="S2">
+              </datalist>
+            </div>
+
+            <div style="margin-bottom: 1rem;">
+              <label>Password</label>
+              <input type="password" name="email" placeholder="Rahasia123" class="form-control" required>
+            </div>
+
+            <button type="reset" class="btn btn-info">Reset</button>
+            <button type="submit" class="btn btn-primary">Submit</button> <br>
+			* Data akan dikirim ke halaman response (membutuhkan akses internet)
+          </fieldset>
+        </form>
+        <!-- --- FORM END --- -->
+      </div>
+    </div>
+    <hr>
+
+    <div class="alert alert-success">
+      Membuat form bebas dengan kriteria sebagai berikut: <br>
+      1. Memuat sebanyak-banyak element form <br>
+      2. Gunakan fieldset <br>
+      3. Gunakan placeholder <br>
+      4. Gunakan atribut untuk memberikan nama variable data yang akan dikirim <br> <br>
+
+      Contoh: <br>
+      1. Form pendaftaran <br>
+      2. Form izin masuk ke daerah COVID <br>
+      3. Bisa lihat contoh-contoh di Website lain <br> <br>
+
+      Kamu buat file html di folder tugas2NPMNama --> zip <br>
+      contoh tugas24519210103Fatema.zip <br> <br>
+
+      Kita bahas bersama tugas ini minggu depan, 1 Oktober 2020. <br>
+    </div>
+  </div>
+
+</body>
+
+</html>
